@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .normalLink {
+    @apply flex items-center justify-center space-x-3 xl:space-x-2 xl:justify-start cursor-pointer font-semibold p-3 hover:bg-[#F1F1F2] rounded-lg xl:border-2 xl:border-gray-300 xl:rounded-full;
+  }
+
+  .activeLink {
+    @apply text-[#f51997] flex items-center justify-center space-x-3 xl:space-x-2 xl:justify-start cursor-pointer font-semibold p-3 hover:bg-[#F1F1F2] rounded-lg xl:border-2 xl:border-[#f51997] xl:rounded-full;
+  }
+
+  .videoIcon {
+    @apply text-black text-2xl lg:text-4xl cursor-pointer;
+  }
+
+  .likeBtn {
+    @apply bg-gray-200 disabled:cursor-not-allowed w-8 h-8 md:w-14 md:h-14 inline-flex justify-center items-center rounded-full;
+  }
+
+  .selectBtn {
+    @apply text-xl font-semibold cursor-pointer;
+  }
+
+  .activeBtn {
+    @apply text-black border-b-2 border-black;
+  }
+}
